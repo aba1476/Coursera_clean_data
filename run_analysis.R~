@@ -61,4 +61,4 @@ melteddata <- melt(necdata, id=c('subjectid', 'activity')) # does a transpose fu
 tidydata <- dcast(melteddata, subjectid+activity ~ variable, mean)
 
 # write tidy data set to file for uploading with row names = false
-write.csv(tidydata, file= 'tidy.csv', row.names = FALSE)
+write.csv(tidydata, file= 'tidy.txt', row.names = FALSE)
